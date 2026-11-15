@@ -1,0 +1,268 @@
+{
+  "project_name": "EduPulse AI \u2014 Student Academic Performance & Pass/Fail Prediction System",
+  "features": [
+    "Hours_Studied",
+    "Attendance_Percentage",
+    "Previous_Score",
+    "Assignments_Completed"
+  ],
+  "feature_labels": [
+    "Hours Studied",
+    "Attendance (%)",
+    "Previous Score",
+    "Assignments Completed"
+  ],
+  "target": "Result",
+  "logistic_regression": {
+    "coefficients": [
+      2.75460764511208,
+      2.202520393675136,
+      2.941834293699539,
+      1.588740547415326
+    ],
+    "intercept": 0.4357869162521694,
+    "feature_coefficients": {
+      "Hours_Studied": 2.75460764511208,
+      "Attendance_Percentage": 2.202520393675136,
+      "Previous_Score": 2.941834293699539,
+      "Assignments_Completed": 1.588740547415326
+    }
+  },
+  "coefficients": [
+    2.75460764511208,
+    2.202520393675136,
+    2.941834293699539,
+    1.588740547415326
+  ],
+  "intercept": 0.4357869162521694,
+  "scaler": {
+    "mean": [
+      5.269500000000001,
+      74.551,
+      66.122,
+      4.86
+    ],
+    "scale": [
+      2.620891022152581,
+      14.105622956821154,
+      19.704456754754748,
+      3.2535211694408877
+    ],
+    "feature_means": {
+      "Hours_Studied": 5.269500000000001,
+      "Attendance_Percentage": 74.551,
+      "Previous_Score": 66.122,
+      "Assignments_Completed": 4.86
+    },
+    "feature_scales": {
+      "Hours_Studied": 2.620891022152581,
+      "Attendance_Percentage": 14.105622956821154,
+      "Previous_Score": 19.704456754754748,
+      "Assignments_Completed": 3.2535211694408877
+    }
+  },
+  "scaler_mean": [
+    5.269500000000001,
+    74.551,
+    66.122,
+    4.86
+  ],
+  "scaler_scale": [
+    2.620891022152581,
+    14.105622956821154,
+    19.704456754754748,
+    3.2535211694408877
+  ],
+  "evaluation_metrics": {
+    "logistic_regression": {
+      "accuracy": 0.92,
+      "precision": 0.96,
+      "recall": 0.8888888888888888,
+      "f1_score": 0.9230769230769231,
+      "confusion_matrix": [
+        [
+          44,
+          2
+        ],
+        [
+          6,
+          48
+        ]
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.91,
+      "precision": 0.9245283018867925,
+      "recall": 0.9074074074074074,
+      "f1_score": 0.9158878504672897,
+      "confusion_matrix": [
+        [
+          42,
+          4
+        ],
+        [
+          5,
+          49
+        ]
+      ],
+      "feature_importances": {
+        "Hours_Studied": 0.307196857111946,
+        "Attendance_Percentage": 0.2126957384090684,
+        "Previous_Score": 0.3590073204860801,
+        "Assignments_Completed": 0.12110008399290549
+      }
+    }
+  },
+  "dataset_summary": {
+    "total_records": 500,
+    "pass_count": 270,
+    "fail_count": 230,
+    "pass_percentage": 54.0,
+    "fail_percentage": 46.0,
+    "features_summary": {
+      "Hours_Studied": {
+        "mean": 5.325200000000001,
+        "std": 2.612741432976325,
+        "min": 1.0,
+        "q25": 2.9,
+        "median": 5.3,
+        "q75": 7.6,
+        "max": 10.0
+      },
+      "Attendance_Percentage": {
+        "mean": 74.55539999999999,
+        "std": 14.104115817945202,
+        "min": 50.1,
+        "q25": 62.575,
+        "median": 74.4,
+        "q75": 87.025,
+        "max": 99.8
+      },
+      "Previous_Score": {
+        "mean": 65.50919999999999,
+        "std": 19.91970040659691,
+        "min": 30.2,
+        "q25": 49.150000000000006,
+        "median": 65.95,
+        "q75": 81.9,
+        "max": 100.0
+      },
+      "Assignments_Completed": {
+        "mean": 4.98,
+        "std": 3.2571179952943896,
+        "min": 0.0,
+        "q25": 2.0,
+        "median": 5.0,
+        "q75": 8.0,
+        "max": 10.0
+      }
+    }
+  },
+  "first_15_rows": [
+    {
+      "Hours_Studied": 1.9,
+      "Attendance_Percentage": 85.4,
+      "Previous_Score": 66.0,
+      "Assignments_Completed": 8,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 7.9,
+      "Attendance_Percentage": 52.6,
+      "Previous_Score": 44.9,
+      "Assignments_Completed": 10,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 3.2,
+      "Attendance_Percentage": 54.1,
+      "Previous_Score": 69.1,
+      "Assignments_Completed": 4,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 2.2,
+      "Attendance_Percentage": 50.6,
+      "Previous_Score": 41.8,
+      "Assignments_Completed": 7,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 4.0,
+      "Attendance_Percentage": 59.8,
+      "Previous_Score": 72.1,
+      "Assignments_Completed": 10,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 1.7,
+      "Attendance_Percentage": 82.2,
+      "Previous_Score": 42.7,
+      "Assignments_Completed": 10,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 7.0,
+      "Attendance_Percentage": 64.3,
+      "Previous_Score": 36.6,
+      "Assignments_Completed": 7,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 8.3,
+      "Attendance_Percentage": 88.8,
+      "Previous_Score": 80.6,
+      "Assignments_Completed": 2,
+      "Result": 1
+    },
+    {
+      "Hours_Studied": 9.8,
+      "Attendance_Percentage": 89.8,
+      "Previous_Score": 72.8,
+      "Assignments_Completed": 8,
+      "Result": 1
+    },
+    {
+      "Hours_Studied": 6.7,
+      "Attendance_Percentage": 71.3,
+      "Previous_Score": 51.9,
+      "Assignments_Completed": 4,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 2.9,
+      "Attendance_Percentage": 64.7,
+      "Previous_Score": 73.0,
+      "Assignments_Completed": 6,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 5.9,
+      "Attendance_Percentage": 87.2,
+      "Previous_Score": 62.2,
+      "Assignments_Completed": 6,
+      "Result": 1
+    },
+    {
+      "Hours_Studied": 5.9,
+      "Attendance_Percentage": 79.8,
+      "Previous_Score": 62.9,
+      "Assignments_Completed": 9,
+      "Result": 1
+    },
+    {
+      "Hours_Studied": 3.1,
+      "Attendance_Percentage": 65.8,
+      "Previous_Score": 58.6,
+      "Assignments_Completed": 4,
+      "Result": 0
+    },
+    {
+      "Hours_Studied": 2.0,
+      "Attendance_Percentage": 54.6,
+      "Previous_Score": 99.4,
+      "Assignments_Completed": 5,
+      "Result": 0
+    }
+  ]
+}

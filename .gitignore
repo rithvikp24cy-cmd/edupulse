@@ -1,0 +1,23 @@
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+.env
+
+# Matplotlib cache
+.mplconfig/
+
+# OS & System
+.DS_Store
+Thumbs.db
+*.lnk
+desktop.ini
+
+# Local runner helpers
+python.cmd
+python.bat
+git.cmd
+git.bat
